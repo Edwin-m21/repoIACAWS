@@ -1,4 +1,4 @@
-FROM php:8.4.5RC1-apache
+FROM php:8.4.5RC1-cli-alpine3.21
 
 RUN docker-php-ext-install mysqli && docker-php-ext-enable mysqli
 RUN apt-get update && apt-get upgrade -y
